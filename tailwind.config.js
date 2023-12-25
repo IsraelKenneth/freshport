@@ -8,7 +8,12 @@ module.exports = {
     // Or if using `src` directory:
     './src/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: 'class',
   theme: {
+    fontFamily: {
+      sanse: ['Roboto', 'sans-serif'],
+      serif: ['Domine', 'serif'],
+    },
     container: {
       padding: {
         DEFAULT: '15px',
@@ -31,6 +36,8 @@ module.exports = {
         circles: 'url("/bg-circles.png")',
         circleStar: 'url("/circle-star.svg")',
         site: 'url("/site-bg.svg")',
+        astronaut: "url('/assets/banner-bg.png')",
+      
       },
       animation: {
         'spin-slow': 'spin 6s linear infinite',

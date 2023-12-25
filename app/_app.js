@@ -1,6 +1,8 @@
 // 'use client'
 
-import { Layout } from '@/components';
+// import { Layout } from '@/components';
+
+import RootLayout from './layout';
 
 import '../styles/globals.css'
 import { useRouter } from 'next/router';
@@ -13,7 +15,7 @@ import Transition from '@/components/Transition';
 const App = ({Component, pageProps}) =>{
   const router = useRouter()
   return(
-    <Layout>
+    <RootLayout>
 
     <AnimatePresence mode='wait'>
      <motion.div key={router.route} className='h-full'>
@@ -22,7 +24,7 @@ const App = ({Component, pageProps}) =>{
 
     <Component {...pageProps} />
     </AnimatePresence>
-    </Layout>
+    </RootLayout>
 )}
 
 export default App;

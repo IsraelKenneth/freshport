@@ -31,6 +31,7 @@ export const navData = [
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { usePathname } from 'next/navigation';
+import ThemeToggle from './ThemeToggle';
 
 const Nav = () => {
   const router = useRouter()
@@ -39,7 +40,7 @@ const Nav = () => {
   <nav className='flex gap-4 fixed h-max bottom-0 
   xl:right-[2%] z-50 top-0 w-full xl:w-16 xl:max-w-md xl:h-screen
   mt-auto flex-col items-center xl:justify-center'>
-  <div className='flex w-full xl:flex-col items-center justify-between xl:justify-center gap-y-10
+  <div className='flex w-full lg:flex-col items-center justify-between xl:justify-center gap-y-10
   px-4 md:px-40 xl:px-0 h-[85px] 
   xl:h-max py-8 bg-white/10 backdrop-blur-sm text-3xl xl:text-xl xl:rounded-full'>
   {navData.map((navbar, index) => {
@@ -57,16 +58,14 @@ const Nav = () => {
        </div>
         </div>
         </div>
-
-
         <div className= ''>
         {navbar.icon}
         </div>
       </Link>
-
     )
   })}
   </div>
+  <ThemeToggle />
   </nav>
 )};
 

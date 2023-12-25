@@ -41,4 +41,20 @@ const Transition = () => {
   );
 };
 
-export default Transition;
+
+const HeroImg = () => {
+  return (
+    <div className="lg:w-1/2 lg:px-10 relative h-screen">
+      <motion.img 
+        src={New} 
+        alt="Professional Showcase" 
+        className="absolute bottom-0 lg:float-left lg:w-full lg:max-w-md lg:ml-10"
+        initial={{ y: '100vh' }}  // Starts the image 100% viewport height from the bottom
+        animate={{ y: 0 }}         // Animate the image to its original position
+        transition={{ type: 'spring', stiffness: 100 }} // Spring animation effect
+      />
+    </div>
+  );
+};
+
+export  {Transition, HeroImg};
