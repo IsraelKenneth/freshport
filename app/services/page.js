@@ -28,7 +28,7 @@ const Services = () => {
   }, []);
 
   return (
-    <div className="container mx-auto px-4 py-12">
+    <div className="container mx-auto px-4 lg:mt-4 mt-32 lg:mb-4 mb-16">
       <h2 className="text-3xl font-bold mb-8 text-center">Skills & Experiences</h2>
       
       <div className="flex flex-wrap lg:flex-row flex-col items-start justify-between w-full mx-auto">

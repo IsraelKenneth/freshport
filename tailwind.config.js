@@ -28,7 +28,9 @@ module.exports = {
     extend: {
       colors: {
         primary: '#131424',
-        secondary: '#393A47',
+        secondary: "#301ABE",
+        tertiary: "#151030",
+        "white-100": "#f3f3f3",
         accent: '#F13024',
       },
       backgroundImage: {
@@ -37,7 +39,17 @@ module.exports = {
         circleStar: 'url("/circle-star.svg")',
         site: 'url("/site-bg.svg")',
         astronaut: "url('/assets/banner-bg.png')",
-      
+        'gradient-dark': 'linear-gradient(to bottom, #0A0E14, #1C2533)',
+        'gradient-deep-purple': 'linear-gradient(to bottom, #120136, #2D0653)',
+
+
+        'gradient-soft': 'linear-gradient(to bottom, #FFF3E0, #FFCC80)',
+        'gradient-daylight': 'linear-gradient(to bottom, #FAFAFA, #E0E0E0)',
+        'gradient-elegant': 'linear-gradient(to bottom,  #E6F7E9, #9CE2C9)',
+        'gradient-meadow': 'linear-gradient(to bottom, #FFF3E6, #FFD3B6)',
+        'gradient-sunny': 'linear-gradient(to bottom, #EAF2FF, #CDDDEC)',
+
+
       },
       animation: {
         'spin-slow': 'spin 6s linear infinite',
@@ -54,4 +66,5 @@ module.exports = {
     },
   },
   plugins: [require('tailwind-scrollbar')],
+  
 };

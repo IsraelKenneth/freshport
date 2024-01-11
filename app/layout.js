@@ -13,10 +13,10 @@ import { Nav, Header, TopLeftImg } from '@/components'
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} page bg-[#eeeef9] dark:bg-astronaut text-black dark:text-white bg-cover bg-no-repeat`}>
-      <Nav />
-      <Header />
-      <TopLeftImg />
+      <body className={`${inter.className} page bg-gradient-daylight dark:bg-gradient-deep-purple text-black dark:text-white bg-cover bg-no-repeat`}>
+      {/* <Nav />
+      <Header /> */}
+      {/* <TopLeftImg /> */}
       {children}
       </body>
     </html>
